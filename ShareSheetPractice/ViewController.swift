@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func shareButtonTapped(_ sender: Any) {
 
+        let shareContent = "foo"
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString],
+                                                              applicationActivities: nil)
+        present(activityViewController, animated: true, completion: {})
+    }
+    
+    
 }
 
