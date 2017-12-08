@@ -19,16 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u81-E5-dd5">
-                                <rect key="frame" x="167" y="318" width="40" height="30"/>
+                                <rect key="frame" x="167" y="597" width="40" height="30"/>
                                 <state key="normal" title="Share"/>
                                 <connections>
                                     <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGX-sc-7p7"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="tbF-cg-HPK">
+                                <rect key="frame" x="16" y="20" width="343" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="v3L-dg-lMQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="u81-E5-dd5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Upg-sj-oUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u81-E5-dd5" secondAttribute="bottom" constant="40" id="17u-EQ-0AC"/>
+                            <constraint firstItem="tbF-cg-HPK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DIe-7c-Zjg"/>
+                            <constraint firstItem="tbF-cg-HPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cjG-HA-s7z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tbF-cg-HPK" secondAttribute="trailing" constant="16" id="eDL-JH-LrC"/>
                             <constraint firstItem="u81-E5-dd5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFr-Dm-p4q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -36,6 +45,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rocket" width="768" height="510"/>
+    </resources>
 </document>
