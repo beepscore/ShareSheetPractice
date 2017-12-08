@@ -22,12 +22,24 @@ class ViewController: UIViewController {
 
     @IBAction func shareButtonTapped(_ sender: Any) {
 
-        let shareContent = "foo"
-        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString],
+        let image = screenImage()
+
+        let activityViewController = UIActivityViewController(activityItems: [image],
                                                               applicationActivities: nil)
+
         present(activityViewController, animated: true, completion: {})
     }
-    
-    
+
+    /// returns current view as a UIImage
+    func screenImage() -> UIImage {
+        // get the image
+        // https://stackoverflow.com/questions/30696307/how-to-convert-a-uiview-to-an-image#33644345
+        let renderer = UIGraphicsImageRenderer(bounds: view.bounds)
+        let image = renderer.image { rendererContext in
+            view.layer.render(in: rendererContext.cgContext)
+        }
+        return image
+    }
+
 }
 
