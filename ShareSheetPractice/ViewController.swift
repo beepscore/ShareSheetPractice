@@ -32,7 +32,6 @@ class ViewController: UIViewController {
 
     /// returns current view as a UIImage
     func screenImage() -> UIImage {
-        // get the image
         // https://stackoverflow.com/questions/30696307/how-to-convert-a-uiview-to-an-image#33644345
         let renderer = UIGraphicsImageRenderer(bounds: view.bounds)
         let image = renderer.image { rendererContext in
