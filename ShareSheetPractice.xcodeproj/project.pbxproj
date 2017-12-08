@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEB27BCB1FDA1B8E00B12729 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DEB27BCC1FDA1B9C00B12729 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DEF7FEF81FDA037D009E3AD2 /* ShareSheetPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareSheetPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF7FEFB1FDA037D009E3AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF7FEFD1FDA037D009E3AD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		DEF7FEEF1FDA037D009E3AD2 = {
 			isa = PBXGroup;
 			children = (
+				DEB27BCC1FDA1B9C00B12729 /* LICENSE */,
+				DEB27BCB1FDA1B8E00B12729 /* README.md */,
 				DEF7FEFA1FDA037D009E3AD2 /* ShareSheetPractice */,
 				DEF7FF0F1FDA037D009E3AD2 /* ShareSheetPracticeTests */,
 				DEF7FF1A1FDA037D009E3AD2 /* ShareSheetPracticeUITests */,
